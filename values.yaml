@@ -1,7 +1,7 @@
 # This file can be used with the yaml-update step
 image:
   repository: nginx
-  tag: 1.29.5
+  tag: 1.29.5-trixie-perl
   pullPolicy: IfNotPresent
 
 replicaCount: 2
