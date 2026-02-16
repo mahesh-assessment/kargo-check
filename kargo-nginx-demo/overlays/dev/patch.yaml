@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-demo
+spec:
+  replicas: 1  # Dev environment uses fewer replicas
+  template:
+    spec:
+      containers:
+      - name: nginx
+        env:
+        - name: ENVIRONMENT
+          value: "dev"
