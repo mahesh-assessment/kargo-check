@@ -1,0 +1,22 @@
+# This file can be used with the yaml-update step
+image:
+  repository: nginx
+  tag: 1.29.5  # Kargo will update this
+  pullPolicy: IfNotPresent
+
+replicaCount: 2
+
+resources:
+  requests:
+    memory: 64Mi
+    cpu: 250m
+  limits:
+    memory: 128Mi
+    cpu: 500m
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: false
