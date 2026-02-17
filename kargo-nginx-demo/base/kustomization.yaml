@@ -5,5 +5,8 @@ resources:
 - deployment.yaml
 - service.yaml
 
-commonLabels:
-  app: nginx-demo
+
+labels:
+- includeSelectors: true
+  pairs:
+    app: nginx-demo
