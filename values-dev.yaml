@@ -1,7 +1,7 @@
 # This file can be used with the yaml-update step
 image:
   repository: public.ecr.aws/nginx/nginx
-  tag: 1.29.7-trixie-otel-arm64v8
+  tag: 1.29.7
   pullPolicy: IfNotPresent
 
 replicaCount: 2
