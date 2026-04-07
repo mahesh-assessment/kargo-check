@@ -1,7 +1,7 @@
 # This file can be used with the yaml-update step
 image:
   repository: nginx
-  tag: 1.29.7-trixie-perl-amd64
+  tag: 1.29.7-trixie-otel-arm64v8
   pullPolicy: IfNotPresent
 
 replicaCount: 2
