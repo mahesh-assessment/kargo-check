@@ -1,6 +1,6 @@
 # This file can be used with the yaml-update step
 image:
-  repository: nginx
+  repository: public.ecr.aws/nginx/nginx
   tag: 1.29.6-trixie-perl-arm64v8
   pullPolicy: IfNotPresent
 
