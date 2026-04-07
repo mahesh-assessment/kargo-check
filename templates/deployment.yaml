@@ -1,15 +1,11 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Rollout
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   name: {{ include "kargo-nginx-demo.fullname" . }}
   labels:
     {{- include "kargo-nginx-demo.labels" . | nindent 4 }}
 spec:
   replicas: {{ .Values.replicaCount }}
-  strategy:
-    canary:
-      steps:
-        {{- toYaml .Values.rollout.canary.steps | nindent 8 }}
   selector:
     matchLabels:
       {{- include "kargo-nginx-demo.selectorLabels" . | nindent 6 }}

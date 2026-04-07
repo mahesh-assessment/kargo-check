@@ -1,6 +1,6 @@
 # kargo-check
 
-Helm chart for deploying nginx with Argo Rollouts and Kargo-driven image promotions.
+Helm chart for deploying nginx with Kubernetes Deployment and Kargo-driven image promotions.
 
 ## Image Source
 
